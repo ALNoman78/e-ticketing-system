@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- daisyUI + tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts awesome -->
+    <script src="https://kit.fontawesome.com/d0e17ced7d.js" crossorigin="anonymous"></script>
+    <!-- config tailwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        Image: "url('./images/banner.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* .hero-container{
+            background-image: url('./images/banner.png');
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- navigation section -->
+        <nav class="md:w-10/12 w-full mx-auto py-8">
+            <div class="navbar bg-base-100 items-center">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[18px] font-medium ">
+                        <li class="ml-10"><a>Home</a></li>
+                        <li class="ml-10"><a>About</a></li>
+                        <li class="ml-10"><a>Destination</a></li>
+                        <li class="ml-10"><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div
+                        class="flex gap-3 rounded-lg p-3 bg-[rgba(28,209,0,0.13)] border border-solid border-[rgba(28,209,0,0.4)]">
+                        <a class="">Bus</a>
+                        <img src="./images/bus-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section start -->
+        <div
+            class="hero-container md:w-10/12 w-full mx-auto bg-Image bg-no-repeat bg-center bg-cover rounded-3xl brightness-110 relative">
+            <div class="hero md:p-40">
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="w-2/3 mx-auto">
+                        <h1 class="mb-5 text-6xl font-extrabold leading-[88px]">
+                            End-to-End Travel with <span class="text-[#1DD100]">P Paribahan</span>
+                        </h1>
+                        <p class="mb-5">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated
+                            testing features allow for a streamlined .
+                        </p>
+                        <button class="btn bg-[#1DD100] outline-0 border-none font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute translate-x-2/4 translate-y-2/4 bottom-0">
+                <div class="stats shadow border-b-4 border-solid border-[#1DD100] justify-between flex">
+                    <div class="stat flex gap-4 ">
+                        <div>
+                            <img src="./images/people.png" alt="">
+                        </div>
+                        <div>
+                            <div class="stat-title">Total Page Views</div>
+                            <div class="stat-value">89,400</div>
+                            <div class="stat-desc">21% more than last month</div>
+                        </div>
+                    </div>
+                    <div class="stat flex gap-4 ">
+                        <div>
+                            <img src="./images/ticket-cupon.png" alt="">
+                        </div>
+                        <div>
+                            <div class="stat-title">Total Page Views</div>
+                            <div class="stat-value">89,400</div>
+                            <div class="stat-desc">21% more than last month</div>
+                        </div>
+                    </div>
+                    <div class="stat flex gap-4 ">
+                        <div>
+                            <img src="./images/stoppage.png" alt="">
+                        </div>
+                        <div>
+                            <div class="stat-title">Total Page Views</div>
+                            <div class="stat-value">89,400</div>
+                            <div class="stat-desc">21% more than last month</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- hero section end -->
+    </header>
+    <main>
+        <!-- ticket-sell container start -->
+        <div class="md:w-10/12 mx-auto w-full md:mt-24 mt-4 bg-white">
+            <div class="flex w-full gap-2">
+                <div class="card rounded-box grid flex-grow place-items-center w-[50%]">
+                    <!-- content header -->
+                    <div class="mb-8 w-full">
+                        <div class="border-b-2 border-dashed border-gray-300">
+                            <h1 class="text-2xl font-bold text-left p-2">
+                                Select Your Seat
+                            </h1>
+                        </div>
+                        <!-- row 2 -->
+                        <div class="flex justify-between p-3">
+                            <div class="flex gap-4">
+                                <img src="./images/seat-gray.png" alt="">
+                                <div>Available</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <img src="./images/seat-green.png" alt="">
+                                <h1 class="text-xl font-bold text-[#1DD100]">Selected</h1>
+                            </div>
+                        </div>
+                        <div class="border-b-2 border-dashed border-gray-300"></div>
+                    </div>
+                    <div class="overflow-x-auto w-full my-12">
+                        <div>
+                            <!-- row 1 -->
+
+                        </div>
+                        <!-- </table> -->
+                        <div class="flex gap-10 items-center">
+                            <h3>A</h3>
+                            <div class="justify-between items-center flex w-full">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        A1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        A2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        A3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        A4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center mt-4">
+                            <h3>B</h3>
+                            <div class="justify-between items-center flex w-full">
+                                <div class="flex gap-4">
+                                    <h3 id="text-seat-b1"
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        B1</h3>
+                                    <h3 id="text-seat-b2"
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        B2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        B3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        B4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center mt-4">
+                            <h3>C</h3>
+                            <div class="justify-between items-center flex w-full">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        C1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        C2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        C3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        C4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center">
+                            <h3>D</h3>
+                            <div class="justify-between items-center flex w-full mt-4">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        D1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        D2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        D3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        D4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center mt-4"> 
+                            <h3>E</h3>
+                            <div class="justify-between items-center flex w-full">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        E1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        E2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        E3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        E4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center">
+                            <h3>F</h3>
+                            <div class="justify-between items-center flex w-full mt-4">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        F1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        F2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        F3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        F4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center mt-4">
+                            <h3>G</h3>
+                            <div class="justify-between items-center flex w-full">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        G1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        G2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        G3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        G4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-10 items-center mt-4">
+                            <h3>H</h3>
+                            <div class="justify-between items-center flex w-full">
+                                <div class="flex gap-4">
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        H1</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        H2</h3>
+                                </div>
+                                <div class="flex justify-around  gap-4">
+                                    <h3 id="bus-h-seat"
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        H3</h3>
+                                    <h3
+                                        class="w-5 bg-[#F7F8F8] place-content-center py-4 flex justify-center rounded-lg px-16 cursor-pointer">
+                                        H4</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- divider 2 -->
+                <div class="divider-horizontal border-r-2 border-dashed border-gray-300"></div>
+                <div class=" rounded-box grid flex-grow place-items-center w-[40%]">
+                    <!-- content from -->
+                    <div class="border-b-2 border-dashed border-gray-300 w-full">
+                        <h1 class="text-2xl font-bold text-left p-2">
+                            Select Your Seat
+                        </h1>
+                    </div>
+                    <div class="bg-[#F7F8F8] w-[90%] mx-auto rounded-2xl p-4 ">
+                        <!-- form heading -->
+                        <div class="flex items-center justify-between px-3 border-b border-dashed border-gray-300 mb-4">
+                            <h3 class="font-bold text-lg">Seat 0</h3>
+                            <h3 class="font-bold text-lg">Class</h3>
+                            <h3 class="font-bold text-lg">Price</h3>
+                        </div>
+                        <div id="ticket-select-show" class="flex justify-between font-semibold flex-col">
+                            
+                        </div>
+                        <div class=" flex justify-between items-center mb-5">
+                            <h3 class="font-bold text-xl">Total Price</h3>
+                            <h3 id="total-price-bdt" class="font-bold text-xl">BDT 0</h3>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <h3 class="font-bold text-xl">Discounted Price</h3>
+                            <h3 class="font-bold text-xl">BDT 0</h3>
+                        </div>
+                        <div class="w-full flex justify-between bg-white p-2 rounded-xl my-4">
+                            <input type="text" class="outline-0 border-none w-full" placeholder="Have any coupon?" />
+                            <button class="bg-[#1DD100] p-3 px-8 font-bold text-white rounded-md">Apply</button>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <h3 class="font-bold text-xl">Grand Total</h3>
+                            <h3 class="font-bold text-xl">BDT 0</h3>
+                        </div>
+                    </div>
+                    <div class="w-[95%] shrink-0">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-semibold text-lg">Passenger Name *</span>
+                                </label>
+                                <input type="text" placeholder="email" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-semibold text-lg">Email</span>
+                                </label>
+                                <input type="email" placeholder="email" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-semibold text-lg">Password</span>
+                                </label>
+                                <input type="password" placeholder="password" class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn bg-[#1DD100]">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ticket-sell container end -->
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/utilities.js"></script>
+</body>
+
+</html>
