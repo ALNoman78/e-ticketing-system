@@ -240,7 +240,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex gap-10 items-center mt-4"> 
+                        <div class="flex gap-10 items-center mt-4">
                             <h3>E</h3>
                             <div class="justify-between items-center flex w-full">
                                 <div class="flex gap-4">
@@ -343,11 +343,14 @@
                             <h3 class="font-bold text-lg">Price</h3>
                         </div>
                         <div id="ticket-select-show" class="flex justify-between font-semibold flex-col">
-                            
+                            <div id="noman"></div>
                         </div>
                         <div class=" flex justify-between items-center mb-5">
                             <h3 class="font-bold text-xl">Total Price</h3>
-                            <h3 id="total-price-bdt" class="font-bold text-xl">BDT 0</h3>
+                            <div class="inline-flex items-center gap-2">
+                                <span class="font-bold">BDT</span>
+                                <h3 id="total-price-bdt" class="font-bold text-xl">****</h3>
+                            </div>
                         </div>
                         <div class=" flex justify-between items-center">
                             <h3 class="font-bold text-xl">Discounted Price</h3>
@@ -355,11 +358,15 @@
                         </div>
                         <div class="w-full flex justify-between bg-white p-2 rounded-xl my-4">
                             <input type="text" class="outline-0 border-none w-full" placeholder="Have any coupon?" />
-                            <button class="bg-[#1DD100] p-3 px-8 font-bold text-white rounded-md">Apply</button>
+                            <button class="bg-[#1DD100] p-3 px-8 font-bold text-white rounded-md"
+                                disabled>Apply</button>
                         </div>
                         <div class=" flex justify-between items-center">
                             <h3 class="font-bold text-xl">Grand Total</h3>
-                            <h3 id="grand-total" class="font-bold text-xl">BDT 0</h3>
+                            <div class="inline-flex gap-2 items-center">
+                                <span class="font-bold text-xl">BDT</span>
+                                <h3 id="grand-total" class="font-bold text-xl">****</h3>
+                            </div>
                         </div>
                     </div>
                     <div class="md:w-[95%] w-full shrink-0">

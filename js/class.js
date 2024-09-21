@@ -9,17 +9,17 @@ for (const seatBtn of seatButton) {
         seatBtn.style.color = "white";
 
         const ticketP = document.createElement("div");
+        
         ticketP.innerHTML = `
                 <div class = "flex justify-between">
                     <div>Ticket price</div>
                     <p class = "flex justify-center items-center">Economy</p>
-                    <p class  = "price">${550}</p>
+                    <p class  = "price">${650}</p>
                 </div>
             `;
-            // console.log(ticketP);
             document.getElementById('ticket-select-show').append(ticketP);
 
-            ticketPrice = ticketPrice + 550;
+            ticketPrice = ticketPrice + 650;
             const showTicket = document.getElementById('total-price-bdt');
             showTicket.innerText = ticketPrice;
 
@@ -29,5 +29,3 @@ for (const seatBtn of seatButton) {
             this.removeEventListener('click', e);
     });
 }
-
-// seat-btn-selected
