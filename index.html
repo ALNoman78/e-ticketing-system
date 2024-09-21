@@ -27,14 +27,6 @@
             }
         }
     </script>
-    <style>
-        /* .hero-container{
-            background-image: url('./images/banner.png');
-            background-position: center ;
-            background-repeat: no-repeat;
-            background-size: cover;
-        } */
-    </style>
 </head>
 
 <body>
@@ -83,8 +75,8 @@
             class="hero-container md:w-10/12 w-full mx-auto bg-Image bg-no-repeat bg-center bg-cover rounded-3xl brightness-110 relative">
             <div class="hero md:p-40">
                 <div class="hero-content text-neutral-content text-center">
-                    <div class="w-2/3 mx-auto">
-                        <h1 class="mb-5 text-6xl font-extrabold leading-[88px]">
+                    <div class="md:w-2/3 w-full mx-auto">
+                        <h1 class="mb-5 md:text-6xl text-3xl font-extrabold md:leading-[88px]">
                             End-to-End Travel with <span class="text-[#1DD100]">P Paribahan</span>
                         </h1>
                         <p class="mb-5">
@@ -95,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute translate-x-2/4 translate-y-2/4 bottom-0">
+            <div class="absolute translate-x-2/4 translate-y-2/4 bottom-0 md:flex hidden">
                 <div class="stats shadow border-b-4 border-solid border-[#1DD100] justify-between flex">
                     <div class="stat flex gap-4 ">
                         <div>
@@ -136,8 +128,8 @@
     <main>
         <!-- ticket-sell container start -->
         <div class="md:w-10/12 mx-auto w-full md:mt-24 mt-4 bg-white">
-            <div class="flex w-full gap-2">
-                <div class="card rounded-box grid flex-grow place-items-center w-[50%]">
+            <div class="flex flex-col md:flex-row  w-full gap-2">
+                <div class="card rounded-box grid flex-grow place-items-center w-full md:w-[50%]">
                     <!-- content header -->
                     <div class="mb-8 w-full">
                         <div class="border-b-2 border-dashed border-gray-300">
@@ -336,7 +328,7 @@
                 </div>
                 <!-- divider 2 -->
                 <div class="divider-horizontal border-r-2 border-dashed border-gray-300"></div>
-                <div class=" rounded-box grid flex-grow place-items-center w-[40%]">
+                <div class=" rounded-box grid flex-grow place-items-center w-full md:w-[40%]">
                     <!-- content from -->
                     <div class="border-b-2 border-dashed border-gray-300 w-full">
                         <h1 class="text-2xl font-bold text-left p-2">
@@ -370,7 +362,7 @@
                             <h3 class="font-bold text-xl">BDT 0</h3>
                         </div>
                     </div>
-                    <div class="w-[95%] shrink-0">
+                    <div class="md:w-[95%] w-full shrink-0">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
