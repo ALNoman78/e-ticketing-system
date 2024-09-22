@@ -354,12 +354,14 @@
                         </div>
                         <div class=" flex justify-between items-center">
                             <h3 class="font-bold text-xl">Discounted Price</h3>
-                            <h3 class="font-bold text-xl">BDT 0</h3>
+                            <div class="inline-flex items-center">
+                                <span class="text-xl font-bold">BDT</span>
+                                <h3 id="discounted-price" class="font-bold text-xl">00</h3>
+                            </div>
                         </div>
                         <div class="w-full flex justify-between bg-white p-2 rounded-xl my-4">
-                            <input type="text" class="outline-0 border-none w-full" placeholder="Have any coupon?" />
-                            <button class="bg-[#1DD100] p-3 px-8 font-bold text-white rounded-md"
-                                disabled>Apply</button>
+                            <input id="input-field-text" type="text" class="outline-0 border-none w-full" placeholder="Have any coupon?" />
+                            <button id="coupon-button" class="bg-[#1DD100] p-3 px-8 font-bold text-white rounded-md">Apply</button>
                         </div>
                         <div class=" flex justify-between items-center">
                             <h3 class="font-bold text-xl">Grand Total</h3>
